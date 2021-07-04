@@ -1,0 +1,180 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Windows 10 | Gridea</title>
+<link rel="shortcut icon" href="https://0832k12.github.io/favicon.ico?v=1625402346077">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://0832k12.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Windows 10 | Gridea - Atom Feed" href="https://0832k12.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="
+
+下载地址：(64位)
+镜像站①-20H2
+镜像站①-1903
+镜像站①-Windows Server 2009
+最新测试版本
+[OneDrive云盘]暂未提供
+..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://0832k12.github.io">
+  <img class="avatar" src="https://0832k12.github.io/images/avatar.png?v=1625402346077" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Windows 10
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-07-04
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p><img src="https://0832k12.github.io/post-images/1625395130158.png" alt="" loading="lazy"><br>
+<img src="https://0832k12.github.io/post-images/1625394618493.png" alt="" loading="lazy"><br>
+下载地址：(64位)<br>
+<a href="https://mirrors.dtops.cc/ISO/Windows/8-Windows-10-20H2.iso">镜像站①-20H2</a><br>
+<a href="https://mirrors.dtops.cc/ISO/Windows/cn_windows_10_consumer_editions_version_1903_x64_dvd_8f05241d.iso">镜像站①-1903</a><br>
+<a href="https://mirrors.dtops.cc/ISO/Windows/Windows%20Server%202019%20Essentials,%20Version%201809%20-%20Redstone%205%20%5BOct%202018%5D%20(build%2017763.107).iso">镜像站①-Windows Server 2009</a><br>
+<a href="https://uupdump.net/?lang=zh-cn">最新测试版本</a><br>
+[OneDrive云盘]暂未提供</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://0832k12.github.io/post/hello-gridea/">
+              <h3 class="post-title">
+                Hello Gridea
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://0832k12.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
